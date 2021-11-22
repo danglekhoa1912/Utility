@@ -18,7 +18,7 @@ namespace Utility
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTatMang());
+            Application.Run(new Login());
         }
     }
 }

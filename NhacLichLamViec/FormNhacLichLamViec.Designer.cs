@@ -132,6 +132,7 @@ namespace Utility.NhacLichLamViec
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhacLichLamViec";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NhacLichLamViec_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormNhacLichLamViec_FormClosed);
             this.Resize += new System.EventHandler(this.NhacLichLamViec_Resize);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

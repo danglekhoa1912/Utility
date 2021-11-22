@@ -90,5 +90,13 @@ namespace Utility.HenGioTatMay
             Time--;
             countDownTime.Text = Time.ToString();
         }
+
+        private void FormHenGioTatMay_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
+            giaoDienChinh.ShowDialog();
+            this.Close();
+        }
     }
 }

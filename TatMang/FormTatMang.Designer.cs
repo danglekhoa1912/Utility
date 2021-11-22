@@ -41,9 +41,10 @@ namespace Utility.TatMang
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(189, 412);
+            this.btnConnect.Location = new System.Drawing.Point(189, 330);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(94, 29);
+            this.btnConnect.Size = new System.Drawing.Size(94, 23);
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "Enable all";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@ namespace Utility.TatMang
             // 
             // btnDisconnect
             // 
-            this.btnDisconnect.Location = new System.Drawing.Point(407, 412);
+            this.btnDisconnect.Location = new System.Drawing.Point(407, 330);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(94, 29);
+            this.btnDisconnect.Size = new System.Drawing.Size(94, 23);
             this.btnDisconnect.TabIndex = 0;
             this.btnDisconnect.Text = "Disable all";
             this.btnDisconnect.UseVisualStyleBackColor = true;
@@ -64,63 +66,67 @@ namespace Utility.TatMang
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 3);
+            this.panel1.Location = new System.Drawing.Point(1, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(687, 53);
+            this.panel1.Size = new System.Drawing.Size(687, 42);
             this.panel1.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(494, 14);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.label4.Location = new System.Drawing.Point(494, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 25);
+            this.label4.Size = new System.Drawing.Size(66, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Bật tắt";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(255, 14);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.label2.Location = new System.Drawing.Point(255, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 25);
+            this.label2.Size = new System.Drawing.Size(113, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Admin State";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(11, 14);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.label1.Location = new System.Drawing.Point(11, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.Size = new System.Drawing.Size(62, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
             // fPanel
             // 
             this.fPanel.AutoScroll = true;
-            this.fPanel.Location = new System.Drawing.Point(1, 63);
+            this.fPanel.Location = new System.Drawing.Point(1, 50);
+            this.fPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fPanel.Name = "fPanel";
-            this.fPanel.Size = new System.Drawing.Size(687, 343);
+            this.fPanel.Size = new System.Drawing.Size(687, 274);
             this.fPanel.TabIndex = 4;
             // 
-            // TatMangMayTinh
+            // FormTatMang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 450);
+            this.ClientSize = new System.Drawing.Size(691, 360);
             this.Controls.Add(this.fPanel);
             this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnConnect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.Name = "TatMangMayTinh";
+            this.Name = "FormTatMang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TatMang";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormTatMang_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

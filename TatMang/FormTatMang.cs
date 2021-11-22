@@ -76,7 +76,6 @@ namespace Utility.TatMang
                 if (nameCard.IndexOf("Enabled") != -1 || nameCard.IndexOf("Disabled") != -1)
                 {
                     nameCard = xuLyChuoi(nameCard);
-                    MessageBox.Show(nameCard);
                     string[] test = nameCard.Split(' ', '4');
 
                     listCardNet.Add(new CardMang(test[0], test[3]));
@@ -106,6 +105,14 @@ namespace Utility.TatMang
                 s = s.Replace("  ", " ");
             }
             return s;
+        }
+
+        private void FormTatMang_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
+            giaoDienChinh.ShowDialog();
+            this.Close();
         }
     }
 }

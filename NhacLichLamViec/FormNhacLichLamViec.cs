@@ -238,5 +238,13 @@ namespace Utility.NhacLichLamViec
             this.WindowState = FormWindowState.Normal;
             notify.Visible = false;
         }
+
+        private void FormNhacLichLamViec_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
+            giaoDienChinh.ShowDialog();
+            this.Close();
+        }
     }
 }
