@@ -31,9 +31,9 @@ namespace Utility.TatMang
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btOnOff = new System.Windows.Forms.Button();
             this.lbAdminSate = new System.Windows.Forms.Label();
             this.lbNameCard = new System.Windows.Forms.Label();
+            this.tgOnOff = new MetroFramework.Controls.MetroToggle();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -44,58 +44,62 @@ namespace Utility.TatMang
             this.panel1.Controls.Add(this.lbAdminSate);
             this.panel1.Controls.Add(this.lbNameCard);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(624, 92);
+            this.panel1.Size = new System.Drawing.Size(624, 74);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btOnOff);
-            this.panel2.Location = new System.Drawing.Point(438, 25);
+            this.panel2.Controls.Add(this.tgOnOff);
+            this.panel2.Location = new System.Drawing.Point(438, 20);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(177, 52);
+            this.panel2.Size = new System.Drawing.Size(177, 42);
             this.panel2.TabIndex = 3;
-            // 
-            // btOnOff
-            // 
-            this.btOnOff.Location = new System.Drawing.Point(30, 9);
-            this.btOnOff.Name = "btOnOff";
-            this.btOnOff.Size = new System.Drawing.Size(116, 34);
-            this.btOnOff.TabIndex = 0;
-            this.btOnOff.Text = "Enabled";
-            this.btOnOff.UseVisualStyleBackColor = true;
-            this.btOnOff.Click += new System.EventHandler(this.btOnOff_Click);
             // 
             // lbAdminSate
             // 
             this.lbAdminSate.AutoSize = true;
-            this.lbAdminSate.Location = new System.Drawing.Point(270, 39);
+            this.lbAdminSate.Location = new System.Drawing.Point(270, 31);
             this.lbAdminSate.Name = "lbAdminSate";
-            this.lbAdminSate.Size = new System.Drawing.Size(68, 20);
+            this.lbAdminSate.Size = new System.Drawing.Size(63, 17);
             this.lbAdminSate.TabIndex = 2;
             this.lbAdminSate.Text = "Disabled";
             // 
             // lbNameCard
             // 
-            this.lbNameCard.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbNameCard.Location = new System.Drawing.Point(0, 34);
+            this.lbNameCard.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.lbNameCard.Location = new System.Drawing.Point(0, 27);
             this.lbNameCard.Name = "lbNameCard";
-            this.lbNameCard.Size = new System.Drawing.Size(238, 25);
+            this.lbNameCard.Size = new System.Drawing.Size(238, 20);
             this.lbNameCard.TabIndex = 1;
             this.lbNameCard.Text = "Ethernet";
             this.lbNameCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ControlCardMang
+            // tgOnOff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.tgOnOff.AutoSize = true;
+            this.tgOnOff.Location = new System.Drawing.Point(51, 11);
+            this.tgOnOff.Name = "tgOnOff";
+            this.tgOnOff.Size = new System.Drawing.Size(80, 21);
+            this.tgOnOff.TabIndex = 0;
+            this.tgOnOff.Text = "Off";
+            this.tgOnOff.UseSelectable = true;
+            this.tgOnOff.CheckedChanged += new System.EventHandler(this.metroToggle1_CheckedChanged);
+            // 
+            // FormCardMang
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "ControlCardMang";
-            this.Size = new System.Drawing.Size(622, 92);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormCardMang";
+            this.Size = new System.Drawing.Size(622, 74);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -106,6 +110,6 @@ namespace Utility.TatMang
         private System.Windows.Forms.Label lbNameCard;
         private System.Windows.Forms.Label lbAdminSate;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btOnOff;
+        private MetroFramework.Controls.MetroToggle tgOnOff;
     }
 }

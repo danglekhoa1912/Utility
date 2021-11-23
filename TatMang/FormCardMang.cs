@@ -17,6 +17,10 @@ namespace Utility.TatMang
             InitializeComponent();
             this.cardMang = cardMang;
             load();
+            if (cardMang.AdminState == "Enabled")
+                tgOnOff.Checked = true;
+            else
+                tgOnOff.Checked = false;
 
         }
 
@@ -26,19 +30,16 @@ namespace Utility.TatMang
         {
             lbNameCard.Text = cardMang.Name;
             lbAdminSate.Text = cardMang.AdminState;
-            if (cardMang.AdminState == "Enabled")
-                btOnOff.Text = "Disable";
-            else
-                btOnOff.Text = "Enable";
+            
         }
 
-        private void btOnOff_Click(object sender, EventArgs e)
+        private void metroToggle1_CheckedChanged(object sender, EventArgs e)
         {
-            if (btOnOff.Text == "Disable")
-                cardMang.AdminState = "Disabled";
-            else
+            if(tgOnOff.Checked)
                 cardMang.AdminState = "Enabled";
-            cardMang.XuLy(cardMang.AdminState);
+            else
+                cardMang.AdminState = "Disabled";
+            cardMang.XuLy(cardMang.AdminState.Substring(0,CardMang.AdminState.Length-1));
             load();
         }
     }

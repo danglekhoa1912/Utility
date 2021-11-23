@@ -66,7 +66,7 @@ namespace Utility
             this.exitbutton.Location = new System.Drawing.Point(203, 300);
             this.exitbutton.Name = "exitbutton";
             this.exitbutton.Size = new System.Drawing.Size(95, 37);
-            this.exitbutton.TabIndex = 2;
+            this.exitbutton.TabIndex = 3;
             this.exitbutton.Text = "EXIT";
             this.exitbutton.UseCustomBackColor = true;
             this.exitbutton.UseCustomForeColor = true;
@@ -77,6 +77,7 @@ namespace Utility
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel1.Location = new System.Drawing.Point(42, 174);
             this.metroLabel1.Name = "metroLabel1";
@@ -111,7 +112,6 @@ namespace Utility
             this.metroTextBox2.DisplayIcon = true;
             this.metroTextBox2.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.metroTextBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.metroTextBox2.Icon = global::Utility.Properties.Resources.lock_login_key_password_protected_safe_security_icon_login_password_11553447634eebadko8fe;
             this.metroTextBox2.IconRight = true;
             this.metroTextBox2.Lines = new string[0];
             this.metroTextBox2.Location = new System.Drawing.Point(42, 256);
@@ -125,7 +125,7 @@ namespace Utility
             this.metroTextBox2.SelectionStart = 0;
             this.metroTextBox2.ShortcutsEnabled = true;
             this.metroTextBox2.Size = new System.Drawing.Size(265, 23);
-            this.metroTextBox2.TabIndex = 6;
+            this.metroTextBox2.TabIndex = 1;
             this.metroTextBox2.UseSelectable = true;
             this.metroTextBox2.WaterMark = "Enter your password";
             this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -133,7 +133,7 @@ namespace Utility
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Utility.Properties.Resources.xyz;
+            this.pictureBox1.Image = global::Utility.Properties.Resources.user;
             this.pictureBox1.Location = new System.Drawing.Point(127, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 95);
@@ -156,7 +156,6 @@ namespace Utility
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.DisplayIcon = true;
-            this.metroTextBox1.Icon = global::Utility.Properties.Resources.usernamicon;
             this.metroTextBox1.IconRight = true;
             this.metroTextBox1.Lines = new string[0];
             this.metroTextBox1.Location = new System.Drawing.Point(42, 197);
@@ -170,7 +169,7 @@ namespace Utility
             this.metroTextBox1.SelectionStart = 0;
             this.metroTextBox1.ShortcutsEnabled = true;
             this.metroTextBox1.Size = new System.Drawing.Size(265, 23);
-            this.metroTextBox1.TabIndex = 5;
+            this.metroTextBox1.TabIndex = 0;
             this.metroTextBox1.UseSelectable = true;
             this.metroTextBox1.WaterMark = "Enter your username";
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -181,6 +180,7 @@ namespace Utility
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.exitbutton;
             this.ClientSize = new System.Drawing.Size(346, 407);
             this.Controls.Add(this.pictureBox1);

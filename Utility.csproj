@@ -93,6 +93,11 @@
     <Compile Include="NhacLichLamViec\ListJobs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TatMang\CardMang.cs" />
     <Compile Include="TatMang\FormCardMang.cs">
       <SubType>UserControl</SubType>
@@ -120,14 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="TatMang\FormCardMang.resx">
+      <DependentUpon>FormCardMang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TatMang\FormTatMang.resx">
       <DependentUpon>FormTatMang.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,31 +146,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\xyz.jpeg" />
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\usernamicon.png" />
+    <None Include="Resources\power-off.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lock-login-key-password-protected-safe-security-icon-login-password-11553447634eebadko8fe.png" />
+    <None Include="Resources\schedule.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\260064922_1062927437799586_1628651689337509211_n.png" />
+    <None Include="Resources\no-internet.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\260618937_300324321957356_2301998778978009605_n.png" />
+    <None Include="Resources\notebook.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\259909386_417196403472960_6352488694436732974_n.png" />
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\260055084_1232488393904245_6502898100681191295_n.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\253704622_1001134323799185_4818120865968389736_n.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\260138752_945591806373309_5243485516853503582_n.png" />
+    <None Include="Resources\performance.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

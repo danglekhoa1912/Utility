@@ -119,7 +119,7 @@ namespace Utility
             this.backbutton.Location = new System.Drawing.Point(448, 327);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(76, 28);
-            this.backbutton.TabIndex = 17;
+            this.backbutton.TabIndex = 7;
             this.backbutton.Text = "Back";
             this.backbutton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.backbutton.UseCustomBackColor = true;
@@ -133,7 +133,7 @@ namespace Utility
             this.quitbutton.Location = new System.Drawing.Point(553, 327);
             this.quitbutton.Name = "quitbutton";
             this.quitbutton.Size = new System.Drawing.Size(76, 28);
-            this.quitbutton.TabIndex = 18;
+            this.quitbutton.TabIndex = 8;
             this.quitbutton.Text = "Quit";
             this.quitbutton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.quitbutton.UseCustomBackColor = true;
@@ -157,81 +157,81 @@ namespace Utility
             // metroButton5
             // 
             this.metroButton5.BackColor = System.Drawing.Color.White;
-            this.metroButton5.BackgroundImage = global::Utility.Properties.Resources._259909386_417196403472960_6352488694436732974_n;
+            this.metroButton5.BackgroundImage = global::Utility.Properties.Resources.no_internet;
             this.metroButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.metroButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton5.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.metroButton5.Location = new System.Drawing.Point(448, 63);
             this.metroButton5.Name = "metroButton5";
             this.metroButton5.Size = new System.Drawing.Size(141, 97);
-            this.metroButton5.TabIndex = 16;
+            this.metroButton5.TabIndex = 3;
             this.metroButton5.UseSelectable = true;
             this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
             // 
             // metroButton4
             // 
             this.metroButton4.BackColor = System.Drawing.Color.White;
-            this.metroButton4.BackgroundImage = global::Utility.Properties.Resources._253704622_1001134323799185_4818120865968389736_n;
+            this.metroButton4.BackgroundImage = global::Utility.Properties.Resources.delete;
             this.metroButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.metroButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton4.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.metroButton4.Location = new System.Drawing.Point(259, 191);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(140, 97);
-            this.metroButton4.TabIndex = 15;
+            this.metroButton4.TabIndex = 5;
             this.metroButton4.UseSelectable = true;
             // 
             // notebook
             // 
             this.notebook.BackColor = System.Drawing.Color.White;
-            this.notebook.BackgroundImage = global::Utility.Properties.Resources._260055084_1232488393904245_6502898100681191295_n;
+            this.notebook.BackgroundImage = global::Utility.Properties.Resources.notebook;
             this.notebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.notebook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.notebook.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.notebook.Location = new System.Drawing.Point(66, 191);
             this.notebook.Name = "notebook";
             this.notebook.Size = new System.Drawing.Size(140, 97);
-            this.notebook.TabIndex = 14;
+            this.notebook.TabIndex = 4;
             this.notebook.UseSelectable = true;
             // 
             // metroButton2
             // 
             this.metroButton2.BackColor = System.Drawing.Color.White;
-            this.metroButton2.BackgroundImage = global::Utility.Properties.Resources._260138752_945591806373309_5243485516853503582_n;
+            this.metroButton2.BackgroundImage = global::Utility.Properties.Resources.performance;
             this.metroButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.metroButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroButton2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.metroButton2.Location = new System.Drawing.Point(448, 191);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(141, 97);
-            this.metroButton2.TabIndex = 14;
+            this.metroButton2.TabIndex = 6;
             this.metroButton2.UseSelectable = true;
             // 
             // remind
             // 
             this.remind.BackColor = System.Drawing.Color.White;
-            this.remind.BackgroundImage = global::Utility.Properties.Resources._260618937_300324321957356_2301998778978009605_n;
+            this.remind.BackgroundImage = global::Utility.Properties.Resources.schedule;
             this.remind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.remind.Cursor = System.Windows.Forms.Cursors.Hand;
             this.remind.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.remind.Location = new System.Drawing.Point(259, 63);
             this.remind.Name = "remind";
             this.remind.Size = new System.Drawing.Size(140, 97);
-            this.remind.TabIndex = 13;
+            this.remind.TabIndex = 2;
             this.remind.UseSelectable = true;
             this.remind.Click += new System.EventHandler(this.remind_Click);
             // 
             // shutdowntimer
             // 
             this.shutdowntimer.BackColor = System.Drawing.Color.White;
-            this.shutdowntimer.BackgroundImage = global::Utility.Properties.Resources._260064922_1062927437799586_1628651689337509211_n;
+            this.shutdowntimer.BackgroundImage = global::Utility.Properties.Resources.power_off;
             this.shutdowntimer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.shutdowntimer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.shutdowntimer.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.shutdowntimer.Location = new System.Drawing.Point(66, 63);
             this.shutdowntimer.Name = "shutdowntimer";
             this.shutdowntimer.Size = new System.Drawing.Size(140, 97);
-            this.shutdowntimer.TabIndex = 12;
+            this.shutdowntimer.TabIndex = 1;
             this.shutdowntimer.UseSelectable = true;
             this.shutdowntimer.Click += new System.EventHandler(this.shutdowntimer_Click);
             // 
@@ -239,6 +239,7 @@ namespace Utility
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(652, 370);
             this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.quitbutton);

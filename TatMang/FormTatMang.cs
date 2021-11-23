@@ -18,8 +18,8 @@ namespace Utility.TatMang
         public FormTatMang()
         {
             InitializeComponent();
-            getNameCardNetEthernet();
-            Load();
+            getNameCardNetEthernet();         
+            LoadForm();
         }
 
         //
@@ -27,7 +27,7 @@ namespace Utility.TatMang
 
         //Load list card network
 
-        void Load()
+        void LoadForm()
         {
             fPanel.Controls.Clear();
             foreach (CardMang i in listCardNet)
@@ -44,7 +44,7 @@ namespace Utility.TatMang
             {
                 i.XuLy(handle);
             }
-            Load();
+            LoadForm();
         }
 
         //Lay ten card mang Ethernet

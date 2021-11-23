@@ -25,11 +25,11 @@ namespace Utility.TatMang
             ProcessStartInfo psi = new ProcessStartInfo();
             psi.FileName = "cmd.exe";
             psi.Arguments = cmdCommand;
-            psi.CreateNoWindow = true;
+            psi.WindowStyle = ProcessWindowStyle.Hidden;
             Process p = new Process();
             p.StartInfo = psi;
             p.Start();
-            adminState = handle + "d";
+            adminState = handle +"d";
         }
     }
 }

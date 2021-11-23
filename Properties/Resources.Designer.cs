@@ -63,9 +63,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _253704622_1001134323799185_4818120865968389736_n {
+        internal static System.Drawing.Bitmap delete {
             get {
-                object obj = ResourceManager.GetObject("253704622_1001134323799185_4818120865968389736_n", resourceCulture);
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _259909386_417196403472960_6352488694436732974_n {
+        internal static System.Drawing.Bitmap no_internet {
             get {
-                object obj = ResourceManager.GetObject("259909386_417196403472960_6352488694436732974_n", resourceCulture);
+                object obj = ResourceManager.GetObject("no-internet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _260055084_1232488393904245_6502898100681191295_n {
+        internal static System.Drawing.Bitmap notebook {
             get {
-                object obj = ResourceManager.GetObject("260055084_1232488393904245_6502898100681191295_n", resourceCulture);
+                object obj = ResourceManager.GetObject("notebook", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _260064922_1062927437799586_1628651689337509211_n {
+        internal static System.Drawing.Bitmap performance {
             get {
-                object obj = ResourceManager.GetObject("260064922_1062927437799586_1628651689337509211_n", resourceCulture);
+                object obj = ResourceManager.GetObject("performance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _260138752_945591806373309_5243485516853503582_n {
+        internal static System.Drawing.Bitmap power_off {
             get {
-                object obj = ResourceManager.GetObject("260138752_945591806373309_5243485516853503582_n", resourceCulture);
+                object obj = ResourceManager.GetObject("power-off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _260618937_300324321957356_2301998778978009605_n {
+        internal static System.Drawing.Bitmap schedule {
             get {
-                object obj = ResourceManager.GetObject("260618937_300324321957356_2301998778978009605_n", resourceCulture);
+                object obj = ResourceManager.GetObject("schedule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,30 +123,9 @@ namespace Utility.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap lock_login_key_password_protected_safe_security_icon_login_password_11553447634eebadko8fe {
+        internal static System.Drawing.Bitmap user {
             get {
-                object obj = ResourceManager.GetObject("lock-login-key-password-protected-safe-security-icon-login-password-11553447634ee" +
-                        "badko8fe", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap usernamicon {
-            get {
-                object obj = ResourceManager.GetObject("usernamicon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap xyz {
-            get {
-                object obj = ResourceManager.GetObject("xyz", resourceCulture);
+                object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
