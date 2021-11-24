@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Utility.TatMang
 {
-    public partial class FormCardMang : UserControl
+    public partial class FormCardMang : MetroFramework.Controls.MetroUserControl
     {
         private CardMang cardMang;
         public FormCardMang(CardMang cardMang)

@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace Utility.HenGioTatMay
 {
-    public partial class FormHenGioTatMay : Form
+    public partial class FormHenGioTatMay : MetroFramework.Forms.MetroForm
     {
         public FormHenGioTatMay()
         {

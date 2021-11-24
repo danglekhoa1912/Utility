@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Utility.NhacLichLamViec
 {
-    public partial class FormTungViec : UserControl
+    public partial class FormTungViec : MetroFramework.Controls.MetroUserControl
     {
         private Job job;
 

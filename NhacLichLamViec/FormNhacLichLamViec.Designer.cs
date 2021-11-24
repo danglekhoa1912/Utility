@@ -47,17 +47,17 @@ namespace Utility.NhacLichLamViec
             // 
             this.pnlJob.AutoScroll = true;
             this.pnlJob.BackColor = System.Drawing.Color.White;
-            this.pnlJob.Location = new System.Drawing.Point(10, 43);
+            this.pnlJob.Location = new System.Drawing.Point(10, 100);
             this.pnlJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlJob.Name = "pnlJob";
-            this.pnlJob.Size = new System.Drawing.Size(869, 259);
+            this.pnlJob.Size = new System.Drawing.Size(869, 278);
             this.pnlJob.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dtpDay);
             this.panel2.Controls.Add(this.lbTitle);
-            this.panel2.Location = new System.Drawing.Point(10, 4);
+            this.panel2.Location = new System.Drawing.Point(10, 62);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(854, 34);
@@ -86,10 +86,10 @@ namespace Utility.NhacLichLamViec
             // panel3
             // 
             this.panel3.Controls.Add(this.btnThem);
-            this.panel3.Location = new System.Drawing.Point(18, 307);
+            this.panel3.Location = new System.Drawing.Point(18, 382);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(854, 43);
+            this.panel3.Size = new System.Drawing.Size(854, 59);
             this.panel3.TabIndex = 0;
             // 
             // btnThem
@@ -98,7 +98,7 @@ namespace Utility.NhacLichLamViec
             this.btnThem.Location = new System.Drawing.Point(61, 0);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(733, 43);
+            this.btnThem.Size = new System.Drawing.Size(733, 57);
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "+";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -113,15 +113,14 @@ namespace Utility.NhacLichLamViec
             // notify
             // 
             this.notify.Icon = ((System.Drawing.Icon)(resources.GetObject("notify.Icon")));
-            this.notify.Text = "Việc làm hôm nay";
+            this.notify.Text = "notifyIcon1";
             this.notify.Visible = true;
-            this.notify.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_MouseDoubleClick);
             // 
             // FormNhacLichLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 360);
+            this.ClientSize = new System.Drawing.Size(891, 451);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlJob);
@@ -129,11 +128,10 @@ namespace Utility.NhacLichLamViec
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormNhacLichLamViec";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NhacLichLamViec";
+            this.Text = "Nhắc Lịch Làm Việc";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NhacLichLamViec_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormNhacLichLamViec_FormClosed);
-            this.Resize += new System.EventHandler(this.NhacLichLamViec_Resize);
+            this.Load += new System.EventHandler(this.FormNhacLichLamViec_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

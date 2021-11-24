@@ -41,10 +41,10 @@ namespace Utility.TatMang
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(189, 330);
+            this.btnConnect.Location = new System.Drawing.Point(191, 386);
             this.btnConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(94, 23);
+            this.btnConnect.Size = new System.Drawing.Size(94, 31);
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "Enable all";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -52,10 +52,10 @@ namespace Utility.TatMang
             // 
             // btnDisconnect
             // 
-            this.btnDisconnect.Location = new System.Drawing.Point(407, 330);
+            this.btnDisconnect.Location = new System.Drawing.Point(409, 386);
             this.btnDisconnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(94, 23);
+            this.btnDisconnect.Size = new System.Drawing.Size(94, 31);
             this.btnDisconnect.TabIndex = 0;
             this.btnDisconnect.Text = "Disable all";
             this.btnDisconnect.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@ namespace Utility.TatMang
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 62);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(687, 42);
@@ -105,7 +105,7 @@ namespace Utility.TatMang
             // fPanel
             // 
             this.fPanel.AutoScroll = true;
-            this.fPanel.Location = new System.Drawing.Point(1, 50);
+            this.fPanel.Location = new System.Drawing.Point(3, 108);
             this.fPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fPanel.Name = "fPanel";
             this.fPanel.Size = new System.Drawing.Size(687, 274);
@@ -115,7 +115,7 @@ namespace Utility.TatMang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 360);
+            this.ClientSize = new System.Drawing.Size(691, 429);
             this.Controls.Add(this.fPanel);
             this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.panel1);
@@ -124,7 +124,6 @@ namespace Utility.TatMang
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormTatMang";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TatMang";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormTatMang_FormClosed);
             this.panel1.ResumeLayout(false);

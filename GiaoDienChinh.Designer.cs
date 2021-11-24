@@ -29,6 +29,8 @@ namespace Utility
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiaoDienChinh));
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -44,6 +46,8 @@ namespace Utility
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.remind = new MetroFramework.Controls.MetroButton();
             this.shutdowntimer = new MetroFramework.Controls.MetroButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.notify = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -149,7 +153,7 @@ namespace Utility
             this.metroLabel7.ForeColor = System.Drawing.Color.DodgerBlue;
             this.metroLabel7.Location = new System.Drawing.Point(5, 27);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(114, 25);
+            this.metroLabel7.Size = new System.Drawing.Size(120, 25);
             this.metroLabel7.TabIndex = 19;
             this.metroLabel7.Text = "FUNCTIONS";
             this.metroLabel7.UseCustomForeColor = true;
@@ -237,6 +241,18 @@ namespace Utility
             this.shutdowntimer.UseSelectable = true;
             this.shutdowntimer.Click += new System.EventHandler(this.shutdowntimer_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // notify
+            // 
+            this.notify.Icon = ((System.Drawing.Icon)(resources.GetObject("notify.Icon")));
+            this.notify.Text = "notifyIcon1";
+            this.notify.Visible = true;
+            // 
             // GiaoDienChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -257,6 +273,7 @@ namespace Utility
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "GiaoDienChinh";
             this.Load += new System.EventHandler(this.GiaoDienChinh_Load);
             this.ResumeLayout(false);
@@ -280,6 +297,8 @@ namespace Utility
         private MetroFramework.Controls.MetroButton backbutton;
         private MetroFramework.Controls.MetroButton quitbutton;
         private MetroFramework.Controls.MetroLabel metroLabel7;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.NotifyIcon notify;
     }
 }
 

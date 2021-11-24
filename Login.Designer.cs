@@ -180,7 +180,6 @@ namespace Utility
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.exitbutton;
             this.ClientSize = new System.Drawing.Size(346, 407);
             this.Controls.Add(this.pictureBox1);
@@ -194,9 +193,9 @@ namespace Utility
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.HelpButton = true;
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.Padding = new System.Windows.Forms.Padding(22, 60, 22, 20);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

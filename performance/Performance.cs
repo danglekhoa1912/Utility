@@ -48,14 +48,12 @@ namespace Utility.performance
                 i++;
             }
         }
-        private void FormCPUandRAM_FormClosed(object sender,FormClosedEventArgs e)
+        private void FormCPUandRAM_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             this.Hide();
-            MessageBox.Show("Hello");
             GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
             giaoDienChinh.ShowDialog();
             this.Close();
-
         }
     }
 }

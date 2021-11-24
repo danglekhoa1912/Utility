@@ -12,7 +12,7 @@ using System.Collections;
 
 namespace Utility.TatMang
 {
-    public partial class FormTatMang : Form
+    public partial class FormTatMang : MetroFramework.Forms.MetroForm
     {
         ArrayList listCardNet = new ArrayList();
         public FormTatMang()

@@ -13,7 +13,7 @@ using System.Xml.Serialization;
 
 namespace Utility.NhacLichLamViec
 {
-    public partial class FormNhacLichLamViec : Form
+    public partial class FormNhacLichLamViec : MetroFramework.Forms.MetroForm
     {
         private string filePath = "data.xml";
         private ListJobs jobs;
@@ -106,40 +106,7 @@ namespace Utility.NhacLichLamViec
             };
             fPanel.Controls.Add(lb);
         }
-        //void SetDefaultJob()
-        //{
-
-        //    jobs.Job.Add(new Job()
-        //    {
-        //        Content = "hihihih",
-        //        IsDone = false,
-        //        TimeStart = new Point(4, 15),
-        //        DayJob = new DateTime(2021,10,24)
-        //    });
-        //    jobs.Job.Add(new Job()
-        //    {
-        //        Content = "hihihih",
-        //        IsDone = false,
-        //        TimeStart = new Point(4, 15),
-        //        DayJob = new DateTime(2021, 10, 24)
-        //    });
-        //    jobs.Job.Add(new Job()
-        //    {
-        //        Content = "hihihih",
-        //        IsDone = false,
-        //        TimeStart = new Point(4, 15),
-        //        DayJob = new DateTime(2021, 10, 24)
-        //    });
-        //    jobs.Job.Add(new Job()
-        //    {
-        //        Content = "hihihih",
-        //        IsDone = true,
-        //        TimeStart = new Point(5, 15),
-        //        DayJob = new DateTime(2021, 10, 24)
-        //    });
-
-        //}
-
+       
         private void Serialize(object data, string path)
         {
             FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
@@ -223,28 +190,25 @@ namespace Utility.NhacLichLamViec
             }
         }
 
-        private void NhacLichLamViec_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                Hide();
-                notify.Visible = true;
-            }
-        }
 
-        private void notify_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Show();
-            this.WindowState = FormWindowState.Normal;
-            notify.Visible = false;
-        }
+
+        //private void notify_MouseDoubleClick(object sender, MouseEventArgs e)
+        //{
+        //    Show();
+        //    this.WindowState = FormWindowState.Normal;
+        //    notify.Visible = false;
+        //}
 
         private void FormNhacLichLamViec_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
             GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
             giaoDienChinh.ShowDialog();
-            this.Close();
+        }
+
+        private void FormNhacLichLamViec_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

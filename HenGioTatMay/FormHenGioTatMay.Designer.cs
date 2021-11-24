@@ -49,7 +49,7 @@ namespace Utility.HenGioTatMay
             // 
             // gio
             // 
-            this.gio.Location = new System.Drawing.Point(21, 25);
+            this.gio.Location = new System.Drawing.Point(14, 62);
             this.gio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gio.Maximum = new decimal(new int[] {
             24,
@@ -62,7 +62,7 @@ namespace Utility.HenGioTatMay
             // 
             // phut
             // 
-            this.phut.Location = new System.Drawing.Point(132, 24);
+            this.phut.Location = new System.Drawing.Point(125, 61);
             this.phut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.phut.Maximum = new decimal(new int[] {
             60,
@@ -76,7 +76,7 @@ namespace Utility.HenGioTatMay
             // 
             // giay
             // 
-            this.giay.Location = new System.Drawing.Point(249, 24);
+            this.giay.Location = new System.Drawing.Point(242, 61);
             this.giay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.giay.Maximum = new decimal(new int[] {
             60,
@@ -91,7 +91,7 @@ namespace Utility.HenGioTatMay
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 30);
+            this.label1.Location = new System.Drawing.Point(80, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 17);
             this.label1.TabIndex = 1;
@@ -100,7 +100,7 @@ namespace Utility.HenGioTatMay
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(198, 30);
+            this.label2.Location = new System.Drawing.Point(191, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace Utility.HenGioTatMay
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(315, 30);
+            this.label3.Location = new System.Drawing.Point(308, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 17);
             this.label3.TabIndex = 1;
@@ -117,10 +117,10 @@ namespace Utility.HenGioTatMay
             // 
             // btXacNhan
             // 
-            this.btXacNhan.Location = new System.Drawing.Point(377, 25);
+            this.btXacNhan.Location = new System.Drawing.Point(370, 51);
             this.btXacNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btXacNhan.Name = "btXacNhan";
-            this.btXacNhan.Size = new System.Drawing.Size(94, 23);
+            this.btXacNhan.Size = new System.Drawing.Size(94, 32);
             this.btXacNhan.TabIndex = 2;
             this.btXacNhan.Text = "Xác nhận";
             this.btXacNhan.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@ namespace Utility.HenGioTatMay
             // 
             this.rbShutDown.AutoSize = true;
             this.rbShutDown.Checked = true;
-            this.rbShutDown.Location = new System.Drawing.Point(63, 70);
+            this.rbShutDown.Location = new System.Drawing.Point(56, 107);
             this.rbShutDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbShutDown.Name = "rbShutDown";
             this.rbShutDown.Size = new System.Drawing.Size(97, 21);
@@ -142,7 +142,7 @@ namespace Utility.HenGioTatMay
             // rbRestart
             // 
             this.rbRestart.AutoSize = true;
-            this.rbRestart.Location = new System.Drawing.Point(207, 70);
+            this.rbRestart.Location = new System.Drawing.Point(200, 107);
             this.rbRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbRestart.Name = "rbRestart";
             this.rbRestart.Size = new System.Drawing.Size(75, 21);
@@ -152,10 +152,10 @@ namespace Utility.HenGioTatMay
             // 
             // btHuy
             // 
-            this.btHuy.Location = new System.Drawing.Point(377, 69);
+            this.btHuy.Location = new System.Drawing.Point(370, 95);
             this.btHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btHuy.Name = "btHuy";
-            this.btHuy.Size = new System.Drawing.Size(94, 23);
+            this.btHuy.Size = new System.Drawing.Size(94, 32);
             this.btHuy.TabIndex = 2;
             this.btHuy.Text = "Hủy lệnh";
             this.btHuy.UseVisualStyleBackColor = true;
@@ -164,9 +164,9 @@ namespace Utility.HenGioTatMay
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 100);
+            this.statusStrip1.Location = new System.Drawing.Point(20, 142);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(487, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(447, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -179,7 +179,7 @@ namespace Utility.HenGioTatMay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 122);
+            this.ClientSize = new System.Drawing.Size(487, 184);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.rbRestart);
             this.Controls.Add(this.rbShutDown);
@@ -194,7 +194,6 @@ namespace Utility.HenGioTatMay
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormHenGioTatMay";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bộ hẹn giờ tắt máy";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHenGioTatMay_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.gio)).EndInit();
