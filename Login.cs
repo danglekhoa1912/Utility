@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Utility
 {
-    public partial class Login : Form
+    public partial class Login : MetroFramework.Forms.MetroForm
     {
         public Login()
         {
@@ -25,6 +25,11 @@ namespace Utility
         private void metroButton2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

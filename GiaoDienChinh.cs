@@ -5,14 +5,16 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using Utility.performance;
 using System.Windows.Forms;
 using Utility.HenGioTatMay;
 using Utility.NhacLichLamViec;
 using Utility.TatMang;
+using System.Diagnostics;
 
 namespace Utility
 {
-    public partial class GiaoDienChinh : Form
+    public partial class GiaoDienChinh : MetroFramework.Forms.MetroForm
     {
         public GiaoDienChinh()
         {
@@ -53,6 +55,33 @@ namespace Utility
             FormTatMang network = new FormTatMang();
             network.ShowDialog();
             this.Close();
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCPUandRAM performance = new FormCPUandRAM();
+            performance.ShowDialog();
+            this.Close();
+        }
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            Process p = new Process();
+            string cmd = @"/c rd %temp%\ /s /q";
+            p.StartInfo.FileName = "cmd.exe";
+            p.StartInfo.Arguments = cmd;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.CreateNoWindow = true;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            p.Start();
+            MessageBox.Show(@"Xoa file tam thanh cong !");
+        }
+
+        private void GiaoDienChinh_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

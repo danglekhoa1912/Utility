@@ -197,6 +197,7 @@ namespace Utility
             this.Name = "Login";
             this.Padding = new System.Windows.Forms.Padding(22, 60, 22, 20);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
