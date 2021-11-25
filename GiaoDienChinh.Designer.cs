@@ -153,7 +153,7 @@ namespace Utility
             this.metroLabel7.ForeColor = System.Drawing.Color.DodgerBlue;
             this.metroLabel7.Location = new System.Drawing.Point(5, 27);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(120, 25);
+            this.metroLabel7.Size = new System.Drawing.Size(114, 25);
             this.metroLabel7.TabIndex = 19;
             this.metroLabel7.Text = "FUNCTIONS";
             this.metroLabel7.UseCustomForeColor = true;
@@ -198,6 +198,7 @@ namespace Utility
             this.notebook.Size = new System.Drawing.Size(140, 97);
             this.notebook.TabIndex = 4;
             this.notebook.UseSelectable = true;
+            this.notebook.Click += new System.EventHandler(this.notebook_Click);
             // 
             // metroButton2
             // 

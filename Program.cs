@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Utility.HenGioTatMay;
 using Utility.NhacLichLamViec;
 using Utility.TatMang;
+using Utility.Notebook;
 
 namespace Utility
 {
@@ -19,6 +20,7 @@ namespace Utility
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+            //Application.Run(new Notebook_main());
         }
     }
 }

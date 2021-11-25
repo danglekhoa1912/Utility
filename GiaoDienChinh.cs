@@ -13,6 +13,7 @@ using Utility.TatMang;
 using System.Diagnostics;
 using System.IO;
 using System.Xml.Serialization;
+using Utility.Notebook;
 
 namespace Utility
 {
@@ -152,6 +153,14 @@ namespace Utility
                     }
                 }
             }
+        }
+
+        private void notebook_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Notebook_main notebook = new Notebook_main();
+            notebook.ShowDialog();
+            this.Close();
         }
     }
 }

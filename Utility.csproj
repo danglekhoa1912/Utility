@@ -89,6 +89,20 @@
     </Compile>
     <Compile Include="NhacLichLamViec\Job.cs" />
     <Compile Include="NhacLichLamViec\ListJobs.cs" />
+    <Compile Include="Notebook\ANote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notebook\ANote.Designer.cs">
+      <DependentUpon>ANote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notebook\listnotes.cs" />
+    <Compile Include="Notebook\Notebook_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notebook\Notebook_main.Designer.cs">
+      <DependentUpon>Notebook_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notebook\Note.cs" />
     <Compile Include="performance\Performance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +140,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NhacLichLamViec\FormNhacLichLamViec.resx">
       <DependentUpon>FormNhacLichLamViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notebook\ANote.resx">
+      <DependentUpon>ANote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notebook\Notebook_main.resx">
+      <DependentUpon>Notebook_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="performance\Performance.resx">
       <DependentUpon>Performance.cs</DependentUpon>
