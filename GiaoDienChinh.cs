@@ -24,7 +24,14 @@ namespace Utility
         public GiaoDienChinh()
         {
             InitializeComponent();
-            load();
+            try
+            {
+                load();
+            }
+            catch
+            {
+
+            }
         }
         private void metroButton1_Click(object sender, EventArgs e)
         {
@@ -92,7 +99,7 @@ namespace Utility
 
         private object Deserialize(string path)
         {
-            FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
             try
             {
                 XmlSerializer sr = new XmlSerializer(typeof(ListJobs));
