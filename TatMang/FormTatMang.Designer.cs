@@ -78,7 +78,7 @@ namespace Utility.TatMang
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.label4.Location = new System.Drawing.Point(494, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 25);
+            this.label4.Size = new System.Drawing.Size(63, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Bật tắt";
             // 
@@ -88,7 +88,7 @@ namespace Utility.TatMang
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.label2.Location = new System.Drawing.Point(255, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.Size = new System.Drawing.Size(109, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Admin State";
             // 
@@ -98,7 +98,7 @@ namespace Utility.TatMang
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.label1.Location = new System.Drawing.Point(11, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 25);
+            this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
@@ -124,6 +124,7 @@ namespace Utility.TatMang
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormTatMang";
+            this.Resizable = false;
             this.Text = "TatMang";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormTatMang_FormClosed);
             this.panel1.ResumeLayout(false);

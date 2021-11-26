@@ -93,7 +93,7 @@ namespace Utility.HenGioTatMay
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(80, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 17);
+            this.label1.Size = new System.Drawing.Size(28, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Giờ";
             // 
@@ -102,7 +102,7 @@ namespace Utility.HenGioTatMay
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(191, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 17);
+            this.label2.Size = new System.Drawing.Size(33, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Phút";
             // 
@@ -111,7 +111,7 @@ namespace Utility.HenGioTatMay
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(308, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 17);
+            this.label3.Size = new System.Drawing.Size(35, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Giây";
             // 
@@ -133,7 +133,7 @@ namespace Utility.HenGioTatMay
             this.rbShutDown.Location = new System.Drawing.Point(56, 107);
             this.rbShutDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbShutDown.Name = "rbShutDown";
-            this.rbShutDown.Size = new System.Drawing.Size(97, 21);
+            this.rbShutDown.Size = new System.Drawing.Size(91, 20);
             this.rbShutDown.TabIndex = 3;
             this.rbShutDown.TabStop = true;
             this.rbShutDown.Text = "Shut Down";
@@ -145,7 +145,7 @@ namespace Utility.HenGioTatMay
             this.rbRestart.Location = new System.Drawing.Point(200, 107);
             this.rbRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbRestart.Name = "rbRestart";
-            this.rbRestart.Size = new System.Drawing.Size(75, 21);
+            this.rbRestart.Size = new System.Drawing.Size(71, 20);
             this.rbRestart.TabIndex = 3;
             this.rbRestart.Text = "Restart";
             this.rbRestart.UseVisualStyleBackColor = true;
@@ -194,6 +194,7 @@ namespace Utility.HenGioTatMay
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormHenGioTatMay";
+            this.Resizable = false;
             this.Text = "Bộ hẹn giờ tắt máy";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHenGioTatMay_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.gio)).EndInit();

@@ -37,14 +37,16 @@
             // 
             // txtb
             // 
-            this.txtb.Location = new System.Drawing.Point(0, 27);
+            this.txtb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtb.Location = new System.Drawing.Point(3, 27);
             this.txtb.Multiline = true;
             this.txtb.Name = "txtb";
-            this.txtb.Size = new System.Drawing.Size(823, 120);
+            this.txtb.Size = new System.Drawing.Size(820, 120);
             this.txtb.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnEdit,
@@ -58,14 +60,14 @@
             // btnEdit
             // 
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(48, 24);
+            this.btnEdit.Size = new System.Drawing.Size(48, 26);
             this.btnEdit.Text = "Sửa";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(49, 24);
+            this.btnDelete.Size = new System.Drawing.Size(49, 26);
             this.btnDelete.Text = "Xóa";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 

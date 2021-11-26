@@ -258,6 +258,7 @@ namespace Utility
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(777, 426);
             this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.quitbutton);
@@ -276,6 +277,7 @@ namespace Utility
             this.Controls.Add(this.metroLabel1);
             this.MaximizeBox = false;
             this.Name = "GiaoDienChinh";
+            this.Resizable = false;
             this.Load += new System.EventHandler(this.GiaoDienChinh_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -69,10 +69,10 @@
     <Compile Include="HenGioTatMay\FormHenGioTatMay.Designer.cs">
       <DependentUpon>FormHenGioTatMay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="NhacLichLamViec\FormNhacLichLamViec.cs">
@@ -135,7 +135,7 @@
     <EmbeddedResource Include="HenGioTatMay\FormHenGioTatMay.resx">
       <DependentUpon>FormHenGioTatMay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhacLichLamViec\FormNhacLichLamViec.resx">

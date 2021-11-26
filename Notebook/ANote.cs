@@ -41,7 +41,6 @@ namespace Utility.Notebook
             if (note.Content == null)
             {
                 btnEdit.Text = "Lưu";
-                this.ActiveControl = txtb;
                 txtb.Focus();
             }
             else

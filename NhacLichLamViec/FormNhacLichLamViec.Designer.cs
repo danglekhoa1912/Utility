@@ -128,6 +128,7 @@ namespace Utility.NhacLichLamViec
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormNhacLichLamViec";
+            this.Resizable = false;
             this.Text = "Nhắc Lịch Làm Việc";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NhacLichLamViec_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormNhacLichLamViec_FormClosed);

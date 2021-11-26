@@ -11,8 +11,9 @@ using System.Xml.Serialization;
 
 namespace Utility.Notebook
 {
-    public partial class Notebook_main : Form
+    public partial class Notebook_main : MetroFramework.Forms.MetroForm
     {
+        private int scr = 94;
         private listnotes notes;
 
         public listnotes Notes
@@ -48,6 +49,7 @@ namespace Utility.Notebook
                 foreach(var note in notes.Note)
                 {
                     AddNote(note);
+                    scr += 150;
                 }
             }
         }
@@ -58,6 +60,8 @@ namespace Utility.Notebook
             note.Edited += aNote_Edited;
             note.Deleted += aNote_Deleted;
             fPanel.Controls.Add(note);
+
+            //fPanel.Controls[notes.Note.Count].Focus();
         }
         void aNote_Deleted(object sender, EventArgs e)
         {
@@ -107,6 +111,8 @@ namespace Utility.Notebook
             Note note=new Note();
             notes.Note.Add(note);
             AddNote(note);
+            fPanel.AutoScrollPosition= new Point(0,scr);
+            scr += 150;
         }
 
         private void Notebook_main_FormClosed(object sender, FormClosedEventArgs e)

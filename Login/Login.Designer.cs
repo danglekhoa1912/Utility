@@ -44,7 +44,7 @@ namespace Utility
             this.Logginbutton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Logginbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logginbutton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.Logginbutton.Location = new System.Drawing.Point(53, 300);
+            this.Logginbutton.Location = new System.Drawing.Point(56, 302);
             this.Logginbutton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Logginbutton.Name = "Logginbutton";
             this.Logginbutton.Size = new System.Drawing.Size(95, 37);
@@ -63,7 +63,7 @@ namespace Utility
             this.exitbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exitbutton.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.exitbutton.Location = new System.Drawing.Point(203, 300);
+            this.exitbutton.Location = new System.Drawing.Point(198, 302);
             this.exitbutton.Name = "exitbutton";
             this.exitbutton.Size = new System.Drawing.Size(95, 37);
             this.exitbutton.TabIndex = 3;
@@ -196,6 +196,7 @@ namespace Utility
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Padding = new System.Windows.Forms.Padding(22, 60, 22, 20);
+            this.Resizable = false;
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
