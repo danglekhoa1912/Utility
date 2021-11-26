@@ -85,7 +85,6 @@ namespace Utility.Notebook
             {
                 XmlSerializer sr = new XmlSerializer(typeof(listnotes));
                 object result = sr.Deserialize(fs);
-                MessageBox.Show("Hello");
                 fs.Close();
                 return result;
             }

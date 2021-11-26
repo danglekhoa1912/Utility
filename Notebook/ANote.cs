@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Utility.Notebook
 {
@@ -79,7 +80,14 @@ namespace Utility.Notebook
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (deleted != null)
+            {
                 deleted(this, new EventArgs());
+                try
+                {
+                    System.IO.File.Delete(@"datanote.xml");
+                }
+                catch { }
+            }
         }
     }
 }
