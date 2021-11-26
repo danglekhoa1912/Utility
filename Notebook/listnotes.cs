@@ -12,8 +12,8 @@ namespace Utility.Notebook
 
         public List<Note> Note
         {
-            get { return note; }
-            set { note = value; }
+            get => note;
+            set => note = value;
         }
 
     }

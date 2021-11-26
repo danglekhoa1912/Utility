@@ -12,8 +12,8 @@ namespace Utility.Notebook
 
         public string Content
         {
-            get { return content; }
-            set { content = value; }
+            get => content;
+            set => content = value;
         }
 
     }

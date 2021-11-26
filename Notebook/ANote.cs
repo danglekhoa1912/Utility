@@ -15,8 +15,8 @@ namespace Utility.Notebook
 
         public Note Note
         {
-            get { return note; }
-            set { note = value; }
+            get => note;
+            set => note = value;
         }
         private event EventHandler edited;
         public event EventHandler Edited
@@ -41,7 +41,7 @@ namespace Utility.Notebook
             {
                 btnEdit.Text = "Lưu";
                 this.ActiveControl = txtb;
-                //txtb.Focus();
+                txtb.Focus();
             }
             else
             {

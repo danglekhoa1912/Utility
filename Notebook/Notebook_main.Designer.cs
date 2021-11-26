@@ -74,7 +74,7 @@
             // 
             this.lblnote.Location = new System.Drawing.Point(0, 31);
             this.lblnote.Name = "lblnote";
-            this.lblnote.Size = new System.Drawing.Size(901, 437);
+            this.lblnote.Size = new System.Drawing.Size(901, 512);
             this.lblnote.TabIndex = 2;
             // 
             // Notebook_main

@@ -77,7 +77,7 @@ namespace Utility.Notebook
             XmlSerializer sr = new XmlSerializer(typeof(listnotes));
             sr.Serialize(fs, data);
             fs.Close();
-        }
+        }   
         private object Deserialize()
         {
             FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
@@ -85,6 +85,7 @@ namespace Utility.Notebook
             {
                 XmlSerializer sr = new XmlSerializer(typeof(listnotes));
                 object result = sr.Deserialize(fs);
+                MessageBox.Show("Hello");
                 fs.Close();
                 return result;
             }
