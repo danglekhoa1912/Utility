@@ -109,7 +109,15 @@ namespace Utility.NhacLichLamViec
        
         private void Serialize(object data, string path)
         {
-            FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write);
+            try
+            {
+                System.IO.File.Delete(path);
+            }
+            catch
+            {
+
+            }
+            FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write);
             XmlSerializer sr = new XmlSerializer(typeof(ListJobs));
             sr.Serialize(fs, data);
             fs.Close();
