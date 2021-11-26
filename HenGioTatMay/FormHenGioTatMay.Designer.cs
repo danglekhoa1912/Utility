@@ -71,7 +71,7 @@ namespace Utility.HenGioTatMay
             0});
             this.phut.Name = "phut";
             this.phut.Size = new System.Drawing.Size(53, 22);
-            this.phut.TabIndex = 0;
+            this.phut.TabIndex = 1;
             this.phut.ValueChanged += new System.EventHandler(this.phut_ValueChanged);
             // 
             // giay
@@ -85,7 +85,7 @@ namespace Utility.HenGioTatMay
             0});
             this.giay.Name = "giay";
             this.giay.Size = new System.Drawing.Size(53, 22);
-            this.giay.TabIndex = 0;
+            this.giay.TabIndex = 2;
             this.giay.ValueChanged += new System.EventHandler(this.giay_ValueChanged);
             // 
             // label1
@@ -93,7 +93,7 @@ namespace Utility.HenGioTatMay
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(80, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 16);
+            this.label1.Size = new System.Drawing.Size(30, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Giờ";
             // 
@@ -102,7 +102,7 @@ namespace Utility.HenGioTatMay
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(191, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 16);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Phút";
             // 
@@ -111,7 +111,7 @@ namespace Utility.HenGioTatMay
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(308, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 16);
+            this.label3.Size = new System.Drawing.Size(37, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "Giây";
             // 
@@ -121,7 +121,7 @@ namespace Utility.HenGioTatMay
             this.btXacNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btXacNhan.Name = "btXacNhan";
             this.btXacNhan.Size = new System.Drawing.Size(94, 32);
-            this.btXacNhan.TabIndex = 2;
+            this.btXacNhan.TabIndex = 5;
             this.btXacNhan.Text = "Xác nhận";
             this.btXacNhan.UseVisualStyleBackColor = true;
             this.btXacNhan.Click += new System.EventHandler(this.btXacNhan_Click);
@@ -133,7 +133,7 @@ namespace Utility.HenGioTatMay
             this.rbShutDown.Location = new System.Drawing.Point(56, 107);
             this.rbShutDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbShutDown.Name = "rbShutDown";
-            this.rbShutDown.Size = new System.Drawing.Size(91, 20);
+            this.rbShutDown.Size = new System.Drawing.Size(97, 21);
             this.rbShutDown.TabIndex = 3;
             this.rbShutDown.TabStop = true;
             this.rbShutDown.Text = "Shut Down";
@@ -145,8 +145,8 @@ namespace Utility.HenGioTatMay
             this.rbRestart.Location = new System.Drawing.Point(200, 107);
             this.rbRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbRestart.Name = "rbRestart";
-            this.rbRestart.Size = new System.Drawing.Size(71, 20);
-            this.rbRestart.TabIndex = 3;
+            this.rbRestart.Size = new System.Drawing.Size(75, 21);
+            this.rbRestart.TabIndex = 4;
             this.rbRestart.Text = "Restart";
             this.rbRestart.UseVisualStyleBackColor = true;
             // 
@@ -156,7 +156,7 @@ namespace Utility.HenGioTatMay
             this.btHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btHuy.Name = "btHuy";
             this.btHuy.Size = new System.Drawing.Size(94, 32);
-            this.btHuy.TabIndex = 2;
+            this.btHuy.TabIndex = 6;
             this.btHuy.Text = "Hủy lệnh";
             this.btHuy.UseVisualStyleBackColor = true;
             this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
@@ -167,7 +167,7 @@ namespace Utility.HenGioTatMay
             this.statusStrip1.Location = new System.Drawing.Point(20, 142);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(447, 22);
-            this.statusStrip1.TabIndex = 4;
+            this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // timer1

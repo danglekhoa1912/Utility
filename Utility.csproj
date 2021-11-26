@@ -141,6 +141,9 @@
     <EmbeddedResource Include="NhacLichLamViec\FormNhacLichLamViec.resx">
       <DependentUpon>FormNhacLichLamViec.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NhacLichLamViec\FormTungViec.resx">
+      <DependentUpon>FormTungViec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Notebook\ANote.resx">
       <DependentUpon>ANote.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,5 +200,6 @@
   <ItemGroup>
     <Content Include="Resources\calendar.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -69,7 +69,7 @@ namespace Utility.NhacLichLamViec
             this.dtpDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDay.Name = "dtpDay";
             this.dtpDay.Size = new System.Drawing.Size(250, 22);
-            this.dtpDay.TabIndex = 1;
+            this.dtpDay.TabIndex = 0;
             this.dtpDay.ValueChanged += new System.EventHandler(this.dtpDay_ValueChanged);
             // 
             // lbTitle
@@ -124,7 +124,6 @@ namespace Utility.NhacLichLamViec
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlJob);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FormNhacLichLamViec";
