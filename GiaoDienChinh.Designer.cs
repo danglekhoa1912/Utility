@@ -153,7 +153,7 @@ namespace Utility
             this.metroLabel7.ForeColor = System.Drawing.Color.DodgerBlue;
             this.metroLabel7.Location = new System.Drawing.Point(5, 27);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(114, 25);
+            this.metroLabel7.Size = new System.Drawing.Size(120, 25);
             this.metroLabel7.TabIndex = 19;
             this.metroLabel7.Text = "FUNCTIONS";
             this.metroLabel7.UseCustomForeColor = true;
@@ -251,8 +251,8 @@ namespace Utility
             // notify
             // 
             this.notify.Icon = ((System.Drawing.Icon)(resources.GetObject("notify.Icon")));
-            this.notify.Text = "notifyIcon1";
-            this.notify.Visible = true;
+            this.notify.Text = "Utility";
+            this.notify.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_MouseDoubleClick);
             // 
             // GiaoDienChinh
             // 
@@ -278,7 +278,7 @@ namespace Utility
             this.MaximizeBox = false;
             this.Name = "GiaoDienChinh";
             this.Resizable = false;
-            this.Load += new System.EventHandler(this.GiaoDienChinh_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GiaoDienChinh_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

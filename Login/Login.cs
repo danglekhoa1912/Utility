@@ -20,21 +20,16 @@ namespace Utility
             this.Hide();
             GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
             giaoDienChinh.ShowDialog();
-            this.Close();
+            if (giaoDienChinh.IsClose)
+            {
+                this.Close();
+            }
         }
         private void metroButton2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

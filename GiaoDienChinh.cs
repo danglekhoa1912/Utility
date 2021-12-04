@@ -21,6 +21,10 @@ namespace Utility
     {
         private string filePath = "data.xml";
         private ListJobs jobs;
+        private bool isClose = false;
+
+        public bool IsClose { get => isClose; set => isClose = value; }
+
         public GiaoDienChinh()
         {
             InitializeComponent();
@@ -43,6 +47,7 @@ namespace Utility
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
+            isClose = true;
             this.Close();
         }
 
@@ -92,9 +97,12 @@ namespace Utility
             MessageBox.Show(@"Xoa file tam thanh cong !");
         }
 
-        private void GiaoDienChinh_Load(object sender, EventArgs e)
+        private void notebook_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Notebook_main notebook = new Notebook_main();
+            notebook.ShowDialog();
+            this.Close();
         }
 
         private object Deserialize(string path)
@@ -119,21 +127,14 @@ namespace Utility
             jobs = Deserialize(filePath) as ListJobs;
         }
 
-        private void GiaoDienChinh_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                MessageBox.Show("1");
-                this.Hide();
-                notify.Visible = true;
-            }
-        }
 
         private void notify_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
-            notify.Visible = false;
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                notify.Visible = false;
+                Visible = true;
+            }
         }
 
         List<Job> getJobToday(DateTime today)
@@ -162,12 +163,14 @@ namespace Utility
             }
         }
 
-        private void notebook_Click(object sender, EventArgs e)
+        private void GiaoDienChinh_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Hide();
-            Notebook_main notebook = new Notebook_main();
-            notebook.ShowDialog();
-            this.Close();
+            if (e.CloseReason==CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+                notify.Visible = true;
+                Visible = false;
+            }
         }
     }
 }
