@@ -21,14 +21,6 @@ namespace Utility
             GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
             giaoDienChinh.UiLogin = this;
             giaoDienChinh.ShowDialog();
-            //if (giaoDienChinh.IsClose==2)
-            //{
-            //    this.Close();
-            //}
-            //else if (giaoDienChinh.IsClose == 3)
-            //{
-            //    this.Show();
-            //}
 
         }
         private void metroButton2_Click(object sender, EventArgs e)

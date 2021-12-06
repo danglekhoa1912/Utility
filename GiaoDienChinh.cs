@@ -19,6 +19,7 @@ namespace Utility
 {
     public partial class GiaoDienChinh : MetroFramework.Forms.MetroForm
     {
+        //private static bool kt=false;
         private string filePath = "data.xml";
         private ListJobs jobs;
         private Login uiLogin;
@@ -34,6 +35,15 @@ namespace Utility
             try
             {
                 load();
+                /*if (kt == false)
+                {
+                    MessageBox.Show("false");
+                    kt = true;
+                }
+                else
+                {
+                    MessageBox.Show("True");
+                }*/
             }
             catch
             {
@@ -48,8 +58,10 @@ namespace Utility
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
+
             isClose = 2;
             this.Close();
+
         }
 
         private void shutdowntimer_Click(object sender, EventArgs e)
@@ -83,6 +95,8 @@ namespace Utility
             FormCPUandRAM performance = new FormCPUandRAM();
             performance.ShowDialog();
             this.Show();
+
+
         }
 
         private void metroButton4_Click(object sender, EventArgs e)
@@ -102,9 +116,11 @@ namespace Utility
         private void notebook_Click(object sender, EventArgs e)
         {
             this.Hide();
+            this.Close();
             Notebook_main notebook = new Notebook_main();
             notebook.ShowDialog();
             this.Show();
+
         }
 
         private object Deserialize(string path)
