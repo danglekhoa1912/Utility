@@ -156,7 +156,6 @@
             this.Name = "FormCPUandRAM";
             this.Resizable = false;
             this.Text = "Performance";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCPUandRAM_FormClosed_1);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pRam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).EndInit();

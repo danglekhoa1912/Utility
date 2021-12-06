@@ -252,6 +252,7 @@ namespace Utility
             // 
             this.notify.Icon = ((System.Drawing.Icon)(resources.GetObject("notify.Icon")));
             this.notify.Text = "Utility";
+            this.notify.Visible = true;
             this.notify.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notify_MouseDoubleClick);
             // 
             // GiaoDienChinh

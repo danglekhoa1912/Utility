@@ -115,12 +115,6 @@ namespace Utility.Notebook
             scr += 150;
         }
 
-        private void Notebook_main_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Hide();
-            GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
-            giaoDienChinh.ShowDialog();
-        }
 
         private void Notebook_main_FormClosing(object sender, FormClosingEventArgs e)
         {

@@ -21,9 +21,12 @@ namespace Utility
     {
         private string filePath = "data.xml";
         private ListJobs jobs;
-        private bool isClose = false;
+        private Login uiLogin;
+        //1 chạy nen, 2 thoat chuong trinh, 3 tro ve giao dien dang nhap
+        private int isClose = 1;
 
-        public bool IsClose { get => isClose; set => isClose = value; }
+        public int IsClose { get => isClose; set => isClose = value; }
+        public Login UiLogin { get => uiLogin; set => uiLogin = value; }
 
         public GiaoDienChinh()
         {
@@ -39,15 +42,13 @@ namespace Utility
         }
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login form1 = new Login();
-            form1.ShowDialog();
+            isClose = 3;
             this.Close();
         }
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
-            isClose = true;
+            isClose = 2;
             this.Close();
         }
 
@@ -56,15 +57,16 @@ namespace Utility
             this.Hide();
             FormHenGioTatMay shutDownTimer = new FormHenGioTatMay();
             shutDownTimer.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void remind_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormNhacLichLamViec reminder = new FormNhacLichLamViec();
+            reminder.NotifyUtility = notify;
             reminder.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void metroButton5_Click(object sender, EventArgs e)
@@ -72,7 +74,7 @@ namespace Utility
             this.Hide();
             FormTatMang network = new FormTatMang();
             network.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
@@ -80,7 +82,7 @@ namespace Utility
             this.Hide();
             FormCPUandRAM performance = new FormCPUandRAM();
             performance.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void metroButton4_Click(object sender, EventArgs e)
@@ -102,7 +104,7 @@ namespace Utility
             this.Hide();
             Notebook_main notebook = new Notebook_main();
             notebook.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private object Deserialize(string path)
@@ -132,7 +134,6 @@ namespace Utility
         {
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
-                notify.Visible = false;
                 Visible = true;
             }
         }
@@ -163,14 +164,25 @@ namespace Utility
             }
         }
 
+
+
         private void GiaoDienChinh_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason==CloseReason.UserClosing)
+            if (isClose==1)
             {
-                e.Cancel = true;
-                notify.Visible = true;
+                e.Cancel=true;
                 Visible = false;
             }
+            else if (isClose == 2)
+            {
+                uiLogin.Close();
+            }
+            else
+            {
+                uiLogin.Show();
+            }
         }
+
+
     }
 }

@@ -107,12 +107,6 @@ namespace Utility.TatMang
             return s;
         }
 
-        private void FormTatMang_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Hide();
-            GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
-            giaoDienChinh.ShowDialog();
-            this.Close();
-        }
+
     }
 }

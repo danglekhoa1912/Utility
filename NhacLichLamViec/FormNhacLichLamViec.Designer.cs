@@ -30,7 +30,6 @@ namespace Utility.NhacLichLamViec
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhacLichLamViec));
             this.pnlJob = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtpDay = new System.Windows.Forms.DateTimePicker();
@@ -38,7 +37,6 @@ namespace Utility.NhacLichLamViec
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnThem = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.notify = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -110,11 +108,6 @@ namespace Utility.NhacLichLamViec
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // notify
-            // 
-            this.notify.Icon = ((System.Drawing.Icon)(resources.GetObject("notify.Icon")));
-            this.notify.Text = "notifyIcon1";
-            // 
             // FormNhacLichLamViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -129,8 +122,6 @@ namespace Utility.NhacLichLamViec
             this.Resizable = false;
             this.Text = "Nhắc Lịch Làm Việc";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NhacLichLamViec_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormNhacLichLamViec_FormClosed);
-            this.Load += new System.EventHandler(this.FormNhacLichLamViec_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -146,6 +137,5 @@ namespace Utility.NhacLichLamViec
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DateTimePicker dtpDay;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.NotifyIcon notify;
     }
 }

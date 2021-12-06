@@ -196,7 +196,6 @@ namespace Utility.HenGioTatMay
             this.Name = "FormHenGioTatMay";
             this.Resizable = false;
             this.Text = "Bộ hẹn giờ tắt máy";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHenGioTatMay_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.gio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.giay)).EndInit();

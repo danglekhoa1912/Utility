@@ -17,9 +17,11 @@ namespace Utility.NhacLichLamViec
     {
         private string filePath = "data.xml";
         private ListJobs jobs;
+         NotifyIcon notifyUtility;
         FlowLayoutPanel fPanel = new FlowLayoutPanel() { AutoScroll = true };
 
         public ListJobs Jobs { get => jobs; set => jobs = value; }
+        public NotifyIcon NotifyUtility { get => notifyUtility; set => notifyUtility = value; }
 
         public FormNhacLichLamViec()
         {
@@ -192,7 +194,7 @@ namespace Utility.NhacLichLamViec
                 {
                     if (jobToday[i].TimeStart.X == DateTime.Now.Hour && jobToday[i].TimeStart.Y == DateTime.Now.Minute && !jobToday[i].IsDone)
                     {
-                        notify.ShowBalloonTip(5000, "Việc bạn cần làm", jobToday[i].Content, ToolTipIcon.Info);
+                        notifyUtility.ShowBalloonTip(5000, "Việc bạn cần làm", jobToday[i].Content, ToolTipIcon.Info);
                     }
                 }
             }
@@ -207,16 +209,5 @@ namespace Utility.NhacLichLamViec
         //    notify.Visible = false;
         //}
 
-        private void FormNhacLichLamViec_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Hide();
-            GiaoDienChinh giaoDienChinh = new GiaoDienChinh();
-            giaoDienChinh.ShowDialog();
-        }
-
-        private void FormNhacLichLamViec_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

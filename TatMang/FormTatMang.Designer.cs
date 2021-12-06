@@ -125,7 +125,6 @@ namespace Utility.TatMang
             this.Name = "FormTatMang";
             this.Resizable = false;
             this.Text = "TatMang";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormTatMang_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -86,7 +86,6 @@
             this.Resizable = false;
             this.Text = "Notebook";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Notebook_main_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Notebook_main_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
