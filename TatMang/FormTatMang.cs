@@ -68,7 +68,7 @@ namespace Utility.TatMang
             p.StandardInput.Close();
             p.WaitForExit();
 
-            //cu ly tach tung dong ket qua trong cmd de lay ten card mang va trang thai
+            //xu ly tach tung dong ket qua trong cmd de lay ten card mang va trang thai
             string nameCard;
             while (!p.StandardOutput.EndOfStream)
             {

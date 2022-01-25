@@ -35,15 +35,6 @@ namespace Utility
             try
             {
                 load();
-                /*if (kt == false)
-                {
-                    MessageBox.Show("false");
-                    kt = true;
-                }
-                else
-                {
-                    MessageBox.Show("True");
-                }*/
             }
             catch
             {
@@ -148,7 +139,7 @@ namespace Utility
 
         private void notify_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 Visible = true;
             }

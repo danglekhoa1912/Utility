@@ -44,16 +44,18 @@ namespace Utility.NhacLichLamViec
                 ////dong tien trinh ghi key
                 //regkey.Close();
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
             }
 
             try
             {
-                Jobs = Deserialize(filePath) as ListJobs;
+                Jobs = DeserializeJobs() as ListJobs;
             }
-            catch
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
             }
             LoadListJob(dtpDay.Value);
         }
@@ -86,7 +88,10 @@ namespace Utility.NhacLichLamViec
 
         void aJob_Edited(object sender, EventArgs e)
         {
-
+            FormTungViec cv = sender as FormTungViec;
+            Job job = cv.Job;
+            if (cv.isSave())
+                jobs.Job.Add(job);
         }
 
         void AddJob(Job item)
@@ -109,22 +114,32 @@ namespace Utility.NhacLichLamViec
             fPanel.Controls.Add(lb);
         }
        
-        private void Serialize(object data, string path)
+        //Doc file XML
+        private void SerializeJobs(object data, string path)
         {
             try
             {
-                System.IO.File.Delete(path);
+                File.Delete(path);
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write);
-            XmlSerializer sr = new XmlSerializer(typeof(ListJobs));
-            sr.Serialize(fs, data);
+            try
+            {
+                XmlSerializer sr = new XmlSerializer(typeof(ListJobs));
+                sr.Serialize(fs, data);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             fs.Close();
         }
-        private object Deserialize(string path)
+
+        //Luu file XML
+        private object DeserializeJobs()
         {
             FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
             try
@@ -143,7 +158,7 @@ namespace Utility.NhacLichLamViec
 
         private void NhacLichLamViec_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Serialize(jobs, filePath);
+            SerializeJobs(jobs, filePath);
         }
 
         private void dtpDay_ValueChanged(object sender, EventArgs e)
@@ -177,7 +192,6 @@ namespace Utility.NhacLichLamViec
             if (getJobToday(dtpDay.Value).Count == 0)
                 fPanel.Controls.Clear();
             Job job = new Job() { DayJob = dtpDay.Value };
-            jobs.Job.Add(job);
             AddJob(job);
         }
 

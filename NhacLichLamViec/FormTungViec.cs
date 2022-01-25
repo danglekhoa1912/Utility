@@ -25,7 +25,6 @@ namespace Utility.NhacLichLamViec
                 txbJob.Enabled = true;
                 nmToHours.Enabled = true;
                 nmToMinute.Enabled = true;
-                txbJob.Focus();
             }
             else
                 ShowInfor();
@@ -95,8 +94,15 @@ namespace Utility.NhacLichLamViec
         private void ckbDone_CheckedChanged(object sender, EventArgs e)
         {
             if (ckbDone.Checked)
+            {
                 this.BackColor = Color.Gray;
-            else this.BackColor = Color.White;
+                job.IsDone = true;
+            }
+            else
+            {
+                this.BackColor = Color.White;
+                job.IsDone = false;
+            }
         }
 
         private void txbJob_Validating(object sender, CancelEventArgs e)
@@ -112,6 +118,13 @@ namespace Utility.NhacLichLamViec
                 e.Cancel = false;
                 errorProvider1.SetError(txbJob, null);
             }
+        }
+
+        public bool isSave()
+        {
+            if (btnEdit.Text == "Ok")
+                return false;
+            return true;
         }
     }
 }
