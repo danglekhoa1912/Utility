@@ -19,6 +19,7 @@ namespace Utility
 {
     public partial class GiaoDienChinh : MetroFramework.Forms.MetroForm
     {
+        //
         //private static bool kt=false;
         private string filePath = "data.xml";
         private ListJobs jobs;
