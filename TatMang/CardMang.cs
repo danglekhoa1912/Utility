@@ -21,7 +21,7 @@ namespace Utility.TatMang
 
         public void XuLy(string handle)
         {
-            string cmdCommand = "/Cnetsh interface set interface \"" + this.Name + "\" " + handle;
+            string cmdCommand = "/C netsh interface set interface \"" + this.Name + "\" " + handle;
             ProcessStartInfo psi = new ProcessStartInfo();
             psi.FileName = "cmd.exe";
             psi.Arguments = cmdCommand;

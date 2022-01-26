@@ -29,26 +29,6 @@ namespace Utility.NhacLichLamViec
             pnlJob.Controls.Add(fPanel);
             fPanel.Width = pnlJob.Width;
             fPanel.Height = pnlJob.Height;
-
-            RegistryKey regkey = Registry.CurrentUser.CreateSubKey("Software\\BTLon");
-            //mo registry khoi dong cung win
-            RegistryKey regstart = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run");
-            string keyvalue = "1";
-            //string subkey = "Software\\ManhQuyen";
-            try
-            {
-                //chen gia tri key
-                regkey.SetValue("Index", keyvalue);
-                //regstart.SetValue("taoregistrytronghethong", "E:\\Studing\\Bai Tap\\CSharp\\Channel 4\\bai temp\\tao registry trong he thong\\tao registry trong he thong\\bin\\Debug\\tao registry trong he thong.exe");
-                regstart.SetValue("BTLon", Application.StartupPath + "\\BTLon.exe");
-                ////dong tien trinh ghi key
-                //regkey.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
             try
             {
                 Jobs = DeserializeJobs() as ListJobs;
