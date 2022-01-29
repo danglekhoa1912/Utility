@@ -37,9 +37,9 @@ namespace Utility
             {
                 load();
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
         private void metroButton1_Click(object sender, EventArgs e)
@@ -134,7 +134,9 @@ namespace Utility
 
         void load()
         {
-            jobs = Deserialize(filePath) as ListJobs;
+            if (File.Exists(Application.StartupPath + "\\data.xml"))
+                jobs = Deserialize(filePath) as ListJobs;
+
         }
 
 

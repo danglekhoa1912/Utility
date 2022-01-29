@@ -31,7 +31,8 @@ namespace Utility.NhacLichLamViec
             fPanel.Height = pnlJob.Height;
             try
             {
-                Jobs = DeserializeJobs() as ListJobs;
+                if(File.Exists(Application.StartupPath + "\\data.xml"))
+                    Jobs = DeserializeJobs() as ListJobs;
             }
             catch (Exception ex)
             {
@@ -94,17 +95,10 @@ namespace Utility.NhacLichLamViec
             fPanel.Controls.Add(lb);
         }
        
-        //Doc file XML
+        
+        //Luu file XML
         private void SerializeJobs(object data, string path)
         {
-            try
-            {
-                File.Delete(path);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
             FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write);
             try
             {
@@ -118,7 +112,7 @@ namespace Utility.NhacLichLamViec
             fs.Close();
         }
 
-        //Luu file XML
+        //Doc file XML
         private object DeserializeJobs()
         {
             FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
@@ -194,14 +188,6 @@ namespace Utility.NhacLichLamViec
             }
         }
 
-
-
-        //private void notify_MouseDoubleClick(object sender, MouseEventArgs e)
-        //{
-        //    Show();
-        //    this.WindowState = FormWindowState.Normal;
-        //    notify.Visible = false;
-        //}
 
     }
 }
